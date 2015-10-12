@@ -1,23 +1,27 @@
 body {
-    background-color: #F2EDEA !important;
-    color: #595049 !important;
-    font-family: 'Ubuntu', sans-serif !important;
+    background-color: #F2EDEA;
+    color: #595049;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .no-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-h1 { padding: 2em 0; }
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 2em 0 1em 0;
+}
 
 .converter-form {
-    border: 1px solid #595049 !important;
-    box-shadow: none !important;
-    color: #0B86D4 !important;
+    border: 1px solid #595049;
+    box-shadow: none;
+    color: #0B86D4;
 }
 
-.converter-arrow { top: 2.5em !important; }
+.converter-arrow { top: 2.5em; }
 
 @media screen and (max-width: 768px) {
     body { padding: 2em; }
