@@ -1,0 +1,17 @@
+h1 {
+    padding-bottom: 2em;
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 2em;
+    }
+    h1 {
+        padding-bottom: 1em;
+    }

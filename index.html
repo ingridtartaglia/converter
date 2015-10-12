@@ -1,16 +1,35 @@
 <html ng-app="converter">
-    <head>
-        <title>#10 - Converter</title>
-        <link type="text/css" rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body ng-controller="converterCtrl">
-        <div class="container">
-            <div class="row">
-                <h1>Converter</h1>
-                <div>
-                    abc
+<head>
+    <title>#10 - Converter</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="converterCtrl">
+    <div class="container">
+        <h1 class="text-center">Converter</h1>
+        <div class="row">
+            <div class="form-group col-xs-12 col-sm-4 col-sm-offset-4">
+                <label for="select-options">Select an option</label>
+                <select name="select-options" class="form-control" ng-model="convertType">
+                    <option ng-value="1">Celsius to Fahrenheit</option>
+                    <option ng-value="2">Kilometer to Mile</option>
+                    <option ng-value="3">Kilo to Pound</option>
+                    <option ng-value="4">Centimeter to Feet</option>
+                    <option ng-value="5">Liter to Oz</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                <div class="form-group col-xs-5 no-padding">
+                    <label for="convert-before">Convert</label>
+                    <input name="convert-before" type="number" class="form-control" ng-model="convertFrom" ng-change="convertValueTo()">
+                </div>
+                <span class="glyphicon glyphicon-resize-horizontal col-xs-2" aria-hidden="true"></span>
+                <div class="form-group col-xs-5 no-padding">
+                    <label for="convert-after">To</label>
+                    <input name="convert-after" type="number" class="form-control" ng-model="convertTo" ng-change="convertValueFrom()">
                 </div>
             </div>
         </div>
@@ -18,7 +37,7 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="app.js"></script>
     </body>
-</html>
+    </html>
